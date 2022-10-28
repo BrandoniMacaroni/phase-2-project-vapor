@@ -3,7 +3,7 @@ import { Route, useRouteMatch } from "react-router-dom";
 import GamesList from "./GamesList";
 import GameShow from "./GameShow";
 
-function GamesPage({ games }) {
+function GamesPage({ games, onDeleteGame}) {
   const match = useRouteMatch();
 
   return (
@@ -19,6 +19,7 @@ function GamesPage({ games }) {
       <Route path={`${match.url}/:gameId`}>
         <GameShow
           games={games}
+          onDeleteGame={onDeleteGame}
         />
       </Route>
     </div>
