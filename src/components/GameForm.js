@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import './App.css';
 
 function GameForm({ onAddGame }) {
     const [formData, setFormData] = useState({
@@ -35,8 +36,8 @@ function GameForm({ onAddGame }) {
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
+        <div className="form-container">
+            <form onSubmit={handleSubmit} className="add-game-form">
                 <input
                     type="text"
                     name="title"
