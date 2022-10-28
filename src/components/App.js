@@ -24,12 +24,20 @@ function App() {
     window.location.reload();
   }
 
+  function handleAddGame(newGame) {
+    setGames([...games, newGame]);
+    history.push("/games");
+    window.location.reload();
+  }
+
   return (
     <div>
       <NavBar />
       <Switch>
         <Route exact path="/add-games">
-          <GameForm />
+          <GameForm 
+            onAddGame={handleAddGame}
+          />
         </Route>
         <Route path="/games">
           <GamesPage 
