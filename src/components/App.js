@@ -1,4 +1,9 @@
+import {  Route, Switch } from "react-router-dom";
 import React from "react";
+import NavBar from "./NavBar";
+import GamesPage from "./GamesPage";
+import GameForm from "./GameForm";
+
 
 function App() {
 
