@@ -144,3 +144,57 @@ button.del-btn {
     margin-top: 45%;
     border: none;
 }
+
+#game-library a {
+    color: #0D47A1;
+}
+
+a#game-title {
+    display: inline-block;
+}
+
+a#your-library {
+    width: 25%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+a#homepage {
+    width: 10%;
+    margin-left: 67%;
+    margin-top: 45%;
+    position: fixed;
+}
+
+a#add-games-to-library {
+    width: 10%;
+    margin-left: 51.5%;
+    margin-top: 45%;
+}
+
+#game-library {
+    margin-left: 1.7%;
+    margin-top: 3%;
+}
+
+#game-library,
+a#your-library,
+a#homepage,
+a#add-games-to-library,
+button.del-btn {
+    background-color: white;
+    color: #0D47A1;
+    font-weight: 300;
+    padding: 13px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 22px;
+    border-radius: 15px;
+    box-shadow: -1px -1px 0px skyblue,
+    3px 3px 0px skyblue,
+    6px 6px 0px #0D47A1;
+}
