@@ -68,3 +68,56 @@ input.submit {
     color: #0D47A1;
     opacity: .5;
 }
+
+h3#choose-game {
+    padding: 6.67%;
+    margin: 0%;
+    text-align: left;
+}
+
+#bg-text-container {
+    text-align: center;
+    padding: 2px;
+}
+
+#bg-text-container,
+#choose-game {
+    background-color: white;
+    color: #0D47A1;
+    font-weight: 800;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    top: 52%;
+    left: 69%;
+    transform: skewX(-16deg);
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 22px;
+    border-radius: 15px;
+    padding-right: 50px;
+    box-shadow: -1px -1px 0px skyblue,
+    3px 3px 0px skyblue,
+    6px 6px 0px #0D47A1;
+}
+
+.bg-text {
+    transform: skewX(16deg);
+    padding-right: 70%;
+}
+
+.bg-image {
+    filter: blur(8px);
+    -webkit-filter: blur(7px);
+    height: 100%;
+    width: 100%;
+    background-position: right;
+    z-index: 0;
+}
+
+#bg-image-container {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
