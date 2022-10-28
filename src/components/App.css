@@ -15,6 +15,14 @@
     text-shadow: -1px -1px 0px skyblue,
         3px 3px 0px skyblue,
         6px 6px 0px #0D47A1;
+    animation:brath 8s  linear infinite;
+}
+
+@keyframes brath{
+    0%{transform: scale(.9);}
+    25%{transform: scale(1);}
+    60%{transform: scale(.9);}
+    100%{transform: scale(1);}
 }
 
 body {
