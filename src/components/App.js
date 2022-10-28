@@ -24,7 +24,9 @@ function App() {
           <GameForm />
         </Route>
         <Route path="/games">
-          <GamesPage />
+          <GamesPage 
+            games={games}
+          />
         </Route>
         <Route exact path="/home">
           <body>
