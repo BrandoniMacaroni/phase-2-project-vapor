@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 //testing if i can do to commits at once
+//test 2
 
 function App() {
   return (
