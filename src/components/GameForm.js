@@ -35,7 +35,61 @@ function GameForm({ onAddGame }) {
     }
 
     return (
-        <div>hi</div>
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    name="title"
+                    onChange={handleChange}
+                    value={formData.title}
+                    placeholder="Enter a game's name..."
+                    className="input-text"
+                />
+
+                <input
+                    type="text"
+                    name="image"
+                    onChange={handleChange}
+                    value={formData.image}
+                    placeholder="Enter a game's image URL..."
+                    className="input-text"
+                />
+
+                <input
+                    type="text"
+                    name="style"
+                    onChange={handleChange}
+                    value={formData.style}
+                    placeholder="FPS, Strategy, etc..."
+                    className="input-text"
+                />
+
+                <input
+                    type="text"
+                    name="pace"
+                    onChange={handleChange}
+                    value={formData.pace}
+                    placeholder="Competitve, Casual, etc..."
+                    className="input-text"
+                />
+
+                <input
+                    type="text"
+                    name="price"
+                    onChange={handleChange}
+                    value={formData.price}
+                    placeholder="Price to play"
+                    className="input-text"
+                />
+
+                <input
+                    type="submit"
+                    name="submit"
+                    value="Create New Game"
+                    className="submit"
+                />
+            </form>
+        </div>
     );
 }
 
