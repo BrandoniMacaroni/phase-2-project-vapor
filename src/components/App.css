@@ -121,3 +121,26 @@ h3#choose-game {
     width: 100%;
     position: fixed;
 }
+
+.master-list {
+    width: 25%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 1px;
+    overflow: hidden;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 19px;
+    position: fixed;
+    z-index: 3;
+    padding: 1%;
+    top: 9%;
+    left: 4.7%;
+}
+
+button.del-btn {
+    z-index: 200;
+    position: fixed;
+    margin-left: 94.3%;
+    margin-top: 45%;
+    border: none;
+}
