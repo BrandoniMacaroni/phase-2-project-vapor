@@ -4,7 +4,6 @@ import NavBar from "./NavBar";
 import GamesPage from "./GamesPage";
 import GameForm from "./GameForm";
 
-
 function App() {
 
   return (

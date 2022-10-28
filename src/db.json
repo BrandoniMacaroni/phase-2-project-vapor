@@ -1,0 +1,52 @@
+{
+  "games": [
+    {
+      "id": 0,
+      "title": "Valorant",
+      "image": "https://www.riotgames.com/darkroom/1440/d0807e131a84f2e42c7a303bda672789:3d02afa7e0bfb75f645d97467765b24c/valorant-offwhitelaunch-keyart.jpg",
+      "style": "FPS",
+      "pace": "Competitive",
+      "price": "Free"
+    },
+    {
+      "id": 1,
+      "title": "Overwatch 2",
+      "image": "https://image.api.playstation.com/vulcan/ap/rnd/202209/2115/AFjDgU8n6RUh6s77sGzJPb4I.jpg?w=1920&thumb=false",
+      "style": "FPS",
+      "pace": "Competitive/Casual",
+      "price": "Free"
+    },
+    {
+      "title": "Teamfight Tactics",
+      "image": "https://images.contentstack.io/v3/assets/blt76b5e73bfd1451ea/blt7098e6d69328343d/629681f18eeef94572763648/TFT_SET722_Web_SetOverview_Meta_1200x630_FINAL.jpg",
+      "style": "Strategy",
+      "pace": "Competitive/Casual",
+      "price": "Free",
+      "id": 2
+    },
+    {
+      "title": "League of Legends",
+      "image": "https://s.yimg.com/uu/api/res/1.2/W._x8EY3MXq4Q_t2qeWP7Q--~B/aD0xMTU4O3c9MTgwMDthcHBpZD15dGFjaHlvbg--/https://s.yimg.com/os/creatr-uploaded-images/2021-01/cdcf03a0-4e92-11eb-afdf-ffae59fc8055.cf.jpg",
+      "style": "Strategy",
+      "pace": "Competitive",
+      "price": "Free",
+      "id": 3
+    },
+    {
+      "title": "Apex Legends",
+      "image": "https://cdnb.artstation.com/p/assets/images/images/029/448/513/large/fahx-pv-apex-legends-season-6-4k-wallpaper2lag.jpg?1597593446",
+      "style": "FPS",
+      "pace": "Competitive",
+      "price": "Free",
+      "id": 4
+    },
+    {
+      "title": "Smite",
+      "image": "https://i.ytimg.com/vi/xAPsmI_zDZs/maxresdefault.jpg",
+      "style": "MOBA",
+      "pace": "Casual",
+      "price": "Free",
+      "id": 5
+    }
+  ]
+}
