@@ -3,6 +3,7 @@ import { useHistory, Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import GamesPage from "./GamesPage";
 import GameForm from "./GameForm";
+import './App.css';
 
 function App() {
   //connecting setGames and games
@@ -30,7 +31,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div id="main">
       <NavBar />
       <Switch>
         <Route exact path="/add-games">
@@ -40,13 +41,13 @@ function App() {
         </Route>
         <Route path="/games">
           <GamesPage 
-            games={games}
+            games={games} 
             onDeleteGame={handleDeleteGame}
           />
         </Route>
         <Route exact path="/home">
           <body>
-            <div>HOME</div>
+            <div className="home-title">VAPOR</div>
           </body>
         </Route>
       </Switch>
