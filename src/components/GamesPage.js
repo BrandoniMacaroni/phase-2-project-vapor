@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import './App.css';
 
 const Vapor = styled.div`
-    animation: disappear-title 1s linear forwards;
+    animation: disappear-title .7s linear forwards;
   `; 
 
 function GamesPage({ games, onDeleteGame }) {

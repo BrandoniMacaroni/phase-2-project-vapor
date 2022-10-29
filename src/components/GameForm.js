@@ -4,8 +4,8 @@ import './App.css';
 import styled from 'styled-components'
 
 const Vapor = styled.div`
-    animation: add-games-title .9s linear forwards;
-  `; 
+    animation: disappear-title .7s linear forwards;  
+`; 
 
 function GameForm({ onAddGame }) {
     const [formData, setFormData] = useState({
@@ -42,7 +42,6 @@ function GameForm({ onAddGame }) {
 
     return (
         <div>
-            <Vapor className="vapor-extra">VAPOR</Vapor>
             <div className="form-container">
                 
                 <form onSubmit={handleSubmit} className="add-game-form">
