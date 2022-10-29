@@ -47,6 +47,14 @@
       "pace": "Casual",
       "price": "Free",
       "id": 5
+    },
+    {
+      "title": "Minecraft",
+      "image": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/4/28/bjoyslzjb3uxqyg82uz2/minecraft",
+      "style": "RPG",
+      "pace": "Casual",
+      "price": "$26",
+      "id": 6
     }
   ]
 }
