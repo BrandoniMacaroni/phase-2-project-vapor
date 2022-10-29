@@ -10,6 +10,7 @@ function App() {
   const [games, setGames] = useState([]);
   let history = useHistory();
 
+
   //pulling data from json and using setGames()
   useEffect(() => {
     fetch("http://localhost:3001/games")

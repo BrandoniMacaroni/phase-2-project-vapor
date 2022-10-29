@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@800&display=swap');
 
-.home-title, .Vapor {
+.home-title, .vapor-extra {
     text-align: center;
     width: 100%;
     margin: 0px auto;
@@ -15,7 +15,25 @@
     text-shadow: -1px -1px 0px skyblue,
         3px 3px 0px skyblue,
         6px 6px 0px #0D47A1;
-    animation:breath 8s  linear infinite, poof .5s linear;
+    
+}
+
+@keyframes add-games-title {
+    0% {
+        transform: translatex(0%) translatey(0%)
+    }
+    100% {
+        transform: translatex(33%) translatey(-88%);
+    }
+}
+
+.vapor-extra {
+    scale: auto;
+}
+
+.home-title {
+    animation:breath 8s  linear infinite, poof .5s linear forwards;
+    scale: 0%;
 }
 
 @keyframes breath{
@@ -26,12 +44,8 @@
     100%{transform: scale(.9);}
 }
 
-.home-title#extra {
-    animation: disappear-title 1s linear forwards;
-}
-
 @keyframes disappear-title {
-    0% { scale: 100%; }
+    0% { scale: auto; }
     20% { scale: 120%; }
     60% { scale: 100%; }
     100% { scale: 0%; }
@@ -62,6 +76,7 @@ div.form-container {
 
 a#your-library.active {
     animation: games-tab 1s forwards;
+    pointer-events: none;
 }
 
 @keyframes games-tab {
@@ -204,6 +219,7 @@ a#your-library {
     margin-left: 1%;
     animation: poof .5s linear;
     position: fixed;
+
 }
 
 @keyframes poof {
