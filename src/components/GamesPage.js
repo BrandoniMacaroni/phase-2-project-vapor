@@ -7,6 +7,7 @@ import './App.css';
 
 function GamesPage({ games, onDeleteGame}) {
   const match = useRouteMatch();
+  const test = "-40px"
   const Vapor = styled.div`
   text-align: center;
   width: 100%;
@@ -16,7 +17,7 @@ function GamesPage({ games, onDeleteGame}) {
   letter-spacing: 5px;
   top: 35%;
   position: absolute;
-  margin-top: -40px;
+  margin-top: ${test};
   font-family: 'Baloo Tamma 2', cursive;
   font-weight: 800;
   text-shadow: -1px -1px 0px skyblue,
