@@ -45,10 +45,8 @@ function App() {
             onDeleteGame={handleDeleteGame}
           />
         </Route>
-        <Route exact path="/home">
-          <body>
-            <div className="home-title">VAPOR</div>
-          </body>
+        <Route exact path="/home">          
+            <div id="not-extra" className="home-title">VAPOR</div>
         </Route>
       </Switch>
     </div>

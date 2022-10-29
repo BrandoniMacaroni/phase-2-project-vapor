@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@800&display=swap');
 
-.home-title {
+.home-title, .Vapor {
     text-align: center;
     width: 100%;
     margin: 0px auto;
@@ -26,6 +26,17 @@
     100%{transform: scale(.9);}
 }
 
+.home-title#extra {
+    animation: disappear-title 1s linear forwards;
+}
+
+@keyframes disappear-title {
+    0% { scale: 100%; }
+    20% { scale: 120%; }
+    60% { scale: 100%; }
+    100% { scale: 0%; }
+}
+
 body {
     background-color: skyblue;
     height: 100vh;
@@ -41,10 +52,21 @@ div.form-container {
     height: 100%;
     width: 30%;
     position: fixed;
-    left: .5%;
+    left: -35%;
     text-align: center;
     z-index: 109;
     top: 10%;
+    margin-left: .70%;
+    animation: slide 1s forwards;
+}
+
+a#your-library.active {
+    animation: games-tab 1s forwards;
+}
+
+@keyframes games-tab {
+    0% {width: 100%;}
+    100% {width: 25%;}
 }
 
 input.input-text:focus {
@@ -79,7 +101,7 @@ input.submit {
 }
 
 h3#choose-game {
-    padding: 6.67%;
+    padding: 8.1%;
     margin: 0%;
     text-align: left;
 }
@@ -87,6 +109,7 @@ h3#choose-game {
 #bg-text-container {
     text-align: center;
     padding: 2px;
+    left: 69%;
 }
 
 #bg-text-container,
@@ -106,13 +129,11 @@ h3#choose-game {
     box-shadow: -1px -1px 0px skyblue,
         3px 3px 0px skyblue,
         6px 6px 0px #0D47A1;
-    -webkit-animation: slide2 1s forwards;
-    animation: slide2 .9s forwards;
-        
+    
 }
 
-@-webkit-keyframes slide2 {
-    100% { left: 0; }
+#choose-game {
+    animation: slide2 1s forwards;
 }
     
 @keyframes slide2 {
@@ -153,16 +174,11 @@ h3#choose-game {
     padding: 1%;
     top: 9%;
     left: -25%;
-    -webkit-animation: slide 1s forwards;
     animation: slide .9s forwards;
 }
 
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
 @keyframes slide {
-    100% { left: 0; }
+    100% { left: 0%; }
 }
 
 
@@ -183,11 +199,11 @@ a#game-title {
 }
 
 a#your-library {
-    width: 25%;
+    width: 95%;
     margin-top: 1%;
     margin-left: 1%;
     animation: poof .5s linear;
-    
+    position: fixed;
 }
 
 @keyframes poof {
