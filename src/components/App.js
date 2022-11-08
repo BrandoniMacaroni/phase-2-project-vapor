@@ -10,7 +10,6 @@ function App() {
   const [games, setGames] = useState([]);
   let history = useHistory();
 
-
   //pulling data from json and using setGames()
   useEffect(() => {
     fetch("http://localhost:3001/games")
@@ -21,14 +20,12 @@ function App() {
   function handleDeleteGame(gameToDelete) {
     const updatedGames = games.filter((game) => game.id !== gameToDelete.id);
     setGames(updatedGames);
-    history.push("/games");
-    window.location.reload();
+    history.push("/home");
   }
 
   function handleAddGame(newGame) {
     setGames([...games, newGame]);
     history.push("/games");
-    window.location.reload();
   }
 
   return (
@@ -36,18 +33,18 @@ function App() {
       <NavBar />
       <Switch>
         <Route exact path="/add-games">
-          <GameForm 
+          <GameForm
             onAddGame={handleAddGame}
           />
         </Route>
         <Route path="/games">
-          <GamesPage 
-            games={games} 
+          <GamesPage
+            games={games}
             onDeleteGame={handleDeleteGame}
           />
         </Route>
-        <Route exact path="/home">          
-            <div id="not-extra" className="home-title">VAPOR</div>
+        <Route exact path="/home">
+          <div id="not-extra" className="home-title">VAPOR</div>
         </Route>
       </Switch>
     </div>
