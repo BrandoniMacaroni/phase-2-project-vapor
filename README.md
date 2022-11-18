@@ -1,5 +1,5 @@
 
-# Flatiron Phase 1 Project
+# Flatiron Phase 2 Project
 
 This is my website I built called "VAPOR". It uses the my own db.json to create a library of the games you choose.
 
